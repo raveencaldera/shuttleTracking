@@ -1,0 +1,20 @@
+<ion-menu [content]="mainContent">
+  <ion-content id="side-menu21">
+    <ion-list id="menu-list1">
+      <ion-item color="none" menuClose="" on-click="goToTracker()" id="menu-list-item1">
+        Let's Drive
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToNewDriver()" id="menu-list-item2">
+        New Driver
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToLogin()" id="menu-list-item3">
+        Login
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToLogout()" id="menu-list-item3">
+        Logout
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

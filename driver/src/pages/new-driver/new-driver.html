@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      New Driver
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page3">
+  <form id="newDriver-form3" #form="ngForm" (ngSubmit)="signup(form)" ngNativeValidate>
+    <ion-item id="newDriver-input9">
+      <ion-label stacked>
+        Bus Name
+      </ion-label>
+      <ion-input [(ngModel)]="username" name="username" type="text" placeholder="" name="Username" required></ion-input>
+    </ion-item>
+    <ion-item id="newDriver-input6">
+      <ion-label stacked>
+        Email
+      </ion-label>
+      <ion-input [(ngModel)]="email" name="email" type="email" placeholder="" required></ion-input>
+    </ion-item>
+    <ion-item id="newDriver-input7">
+      <ion-label stacked>
+        Password
+      </ion-label>
+      <ion-input [(ngModel)]="password" name="password" type="password" placeholder="" required></ion-input>
+    </ion-item>
+  <!--   <ion-item id="newDriver-input8">
+      <ion-label stacked>
+        Confirm Password
+      </ion-label>
+      <ion-input type="password" placeholder="" required></ion-input>
+    </ion-item> -->
+    <button type="submit" id="newDriver-button2" ion-button color="positive" block>
+      Sign Up
+    </button>
+  </form>
+
+</ion-content>

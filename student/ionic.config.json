@@ -1,0 +1,8 @@
+{
+  "name": "shuttle",
+  "app_id": "fc813fd3",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

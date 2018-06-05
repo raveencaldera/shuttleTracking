@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page1">
+  <form #form="ngForm" id="login-form1" (ngSubmit)="login(form)" ngNativeValidate>
+    <ion-item id="login-input1">
+      <ion-label stacked>
+        Email
+      </ion-label>
+      <ion-input [(ngModel)]="username" type="email" required placeholder="" name="username"></ion-input>
+    </ion-item>
+    <ion-item id="login-input3">
+      <ion-label stacked>
+        Password
+      </ion-label>
+      <ion-input [(ngModel)]="password" type="password" required placeholder="" name="password"></ion-input>
+    </ion-item>
+
+  <button type="submit" id="login-button1" ion-button color="positive" block>
+    Login
+  </button>
+</form>
+</ion-content>

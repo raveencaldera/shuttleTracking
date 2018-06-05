@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Shuttle Tracker
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page1">
+    <div style="height: 100%;" id='map'></div>
+</ion-content>
+<ion-footer>
+    <button class="geolocation-btn" ion-button full (click)="tryGeolocation()"> Check Shuttles </button>
+    <button class="geolocation-btn" ion-button full (click)="clearMarkers()"> Clear </button>
+  </ion-footer>

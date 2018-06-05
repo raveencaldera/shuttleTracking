@@ -1,0 +1,27 @@
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Shuttle Tracker
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="shuttleTracker2-list1">
+      <ion-item color="positive" menuClose="" on-click="goToShuttleTracker()" id="shuttleTracker2-list-item1">
+        Map
+        <ion-icon name="map" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="positive" menuClose="" on-click="goToTimeTable()" id="shuttleTracker2-list-item2">
+        Time Table
+        <ion-icon name="log-out" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="positive" menuClose="" on-click="goToLogout()" id="shuttleTracker2-list-item2">
+        About US
+        <ion-icon name="log-out" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
